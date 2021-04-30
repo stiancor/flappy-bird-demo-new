@@ -8,4 +8,5 @@
         com.bhauman/figwheel-main {:mvn/version "0.1.5"}
         com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}}
  :paths ["src" "resources" "target"]
- :aliases {:build {:main-opts ["-m" "figwheel.main" "-b" "flappy" "-r"]}}}
+ :aliases {:build {:main-opts ["-m" "figwheel.main" "-b" "flappy" "-r"]}
+										 :generate-files {:main-opts ["-m" "gen"]}}}

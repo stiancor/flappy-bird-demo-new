@@ -1,0 +1,1 @@
+(ns flappy-bird-demo.generated.mother)

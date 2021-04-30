@@ -46,6 +46,12 @@ Change into the flappy-bird-demo-new directory and run:
 $ clj -A:build
 ```
 
+Edit `number-of-files` to the number of generated files you want in `gen.clj` and run
+
+```shell
+$ clj -A:generate-files
+```
+
 ## License
 
 Copyright © 2018 Bruce Hauman
