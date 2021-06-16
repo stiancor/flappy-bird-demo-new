@@ -46,10 +46,18 @@ Change into the flappy-bird-demo-new directory and run:
 $ clj -A:build
 ```
 
-Edit `number-of-files` to the number of generated files you want in `gen.clj` and run
+Run the command below at the project root to generate cljs-dummy files in the project. 
+The code doesn't really do anything, we just want it there to increase the number of files that has to be downloaded.
+Each file is 46kB-ish. 
+Then try to start the project and see how much time it takes to do a page refresh.
+Be wary though, if you set the number of generated files too high,
+the initial compile and page refresh will take a lot of time. 
+I recommend starting with 10 files then increasing to 100, 200, 400, 800, 1600, 3200 
+When you get to around a thousand files you probably get the idea.
+Trying it with several thousands files really starts sucking the life out of you.
 
 ```shell
-$ clj -A:generate-files
+$ clj -m gen 10
 ```
 
 ## License
